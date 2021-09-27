@@ -43,7 +43,7 @@ const Checklist = () => {
         </tbody>
       </table>
       <div>{selectedPeople.map(el=>
-      <span>{el.name}, </span>)}</div>
+      <span key={el.id}>{el.name}, </span>)}</div>
     </>
   )};
 
